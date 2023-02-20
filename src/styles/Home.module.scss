@@ -16,9 +16,10 @@ $blue: #005aff;
   height: 50px;
   background: #ffffff;
   border: 1px solid #333333;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.8);
   border-radius: 10px;
   cursor: pointer;
+  user-select: none;
   &:hover {
     background: #ddd;
   }
@@ -47,6 +48,7 @@ $blue: #005aff;
   align-items: center;
   text-align: center;
   color: #000000;
+  user-select: none;
 }
 
 .kana {
@@ -58,6 +60,7 @@ $blue: #005aff;
   align-items: center;
   text-align: center;
   color: #000000;
+  user-select: none;
 }
 
 /* Mobile */
@@ -72,6 +75,7 @@ $blue: #005aff;
 }
 
 @media (prefers-color-scheme: dark) {
+
 }
 
 @keyframes rotate {

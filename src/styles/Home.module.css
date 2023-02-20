@@ -23,10 +23,14 @@
   height: 50px;
   background: #ffffff;
   border: 1px solid #333333;
-  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.8);
+          box-shadow: 4px 4px 4px rgba(128, 128, 128, 0.8);
   border-radius: 10px;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .block:hover {
@@ -62,6 +66,10 @@
           align-items: center;
   text-align: center;
   color: #000000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .kana {
@@ -75,6 +83,10 @@
           align-items: center;
   text-align: center;
   color: #000000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 /* Mobile */

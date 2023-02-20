@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
-import styles from "src/components/Header/header.module.css";
 
 export function ChangeThemeButton() {
   const { theme, setTheme } = useTheme();
