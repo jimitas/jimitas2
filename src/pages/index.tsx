@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.scss";
-import { Header } from "@/components/Header";
+import { Header } from "@/components/Header/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +17,23 @@ export default function Home() {
       </Head>
       <Header></Header>
       <main className={styles.main}>
-        <div className={styles.blocks}>aa</div>
+        <div style={{ display: "flex" }}>
+          <div className={styles.block}>
+            <div className={`${styles.block_circle} ${styles.pink}`}></div>
+          </div>
+          <div className={styles.block}>
+            <div className={`${styles.block_circle} ${styles.blue}`}></div>
+          </div>
+          <div className={styles.block}>
+            <div className={styles.number}>1</div>
+          </div>
+          <div className={styles.block}>
+            <div className={styles.number}>10</div>
+          </div>
+          <div className={styles.block}>
+            <div className={styles.kana}>ア</div>
+          </div>
+        </div>
       </main>
     </>
   );

@@ -13,19 +13,68 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
 }
 
-.blocks {
+.block {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 50px;
   height: 50px;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid #333333;
   -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
           box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.block:hover {
+  background: #ddd;
+}
+
+.block_circle {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin: 6px;
+  border: 1px solid #000000;
+}
+
+.pink {
+  background: #ff8082;
+}
+
+.blue {
+  background: #005aff;
+}
+
+.number {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.kana {
+  font-family: "Noto Sans HK", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #000000;
 }
 
 /* Mobile */

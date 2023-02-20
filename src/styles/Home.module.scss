@@ -1,38 +1,77 @@
+$pink: #ff8082;
+$blue: #005aff;
+
 .main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+  min-height: calc(100vh - 60px);
 }
 
-.blocks {
+.block {
   box-sizing: border-box;
   width: 50px;
   height: 50px;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid #333333;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  cursor: pointer;
+  &:hover {
+    background: #ddd;
+  }
+}
+.block_circle {
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  margin: 6px;
+  border: 1px solid #000000;
+}
+.pink {
+  background: $pink;
+}
+.blue {
+  background: $blue;
 }
 
+.number {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
+
+.kana {
+  font-family: "Noto Sans HK", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+}
 
 /* Mobile */
 @media (max-width: 700px) {
   .content {
     padding: 4rem;
   }
-
 }
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
- 
 }
 
 @media (prefers-color-scheme: dark) {
- 
 }
 
 @keyframes rotate {
