@@ -1,0 +1,45 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.blocks {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  background: #FFFFFF;
+  border: 1px solid #333333;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+
+/* Mobile */
+@media (max-width: 700px) {
+  .content {
+    padding: 4rem;
+  }
+
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+ 
+}
+
+@media (prefers-color-scheme: dark) {
+ 
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
